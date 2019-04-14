@@ -15,6 +15,7 @@ foreach ($widgetFinder as $widget) {
     $name = $widget->getBasename();
     $files = [
         'name' => preg_replace("#\.js$#i", "", $widget->getFilename()),
+        'directory' => $widget->getRelativePath(),
         'filename' => $widget->getFilename(),
         'contents' => $widget->getContents(),
     ];
