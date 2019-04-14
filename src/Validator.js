@@ -194,7 +194,7 @@ export default class Validator {
      * @method notBlank
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notBlank(message) {
         this.constraints.notBlank = message;
@@ -207,7 +207,7 @@ export default class Validator {
      * @method isBlank
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isBlank(message) {
         this.constraints.isBlank = message;
@@ -220,7 +220,7 @@ export default class Validator {
      * @method notNull
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notNull(message) {
         this.constraints.notNull = message;
@@ -233,7 +233,7 @@ export default class Validator {
      * @method isNull
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isNull(message) {
         this.constraints.isNull = message;
@@ -246,7 +246,7 @@ export default class Validator {
      * @method isTrue
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isTrue(message) {
         this.constraints.isTrue = message;
@@ -259,7 +259,7 @@ export default class Validator {
      * @method isFalse
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isFalse(message) {
         this.constraints.isFalse = message;
@@ -272,7 +272,7 @@ export default class Validator {
      * @method notString
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notString(message) {
         this.constraints.notString = message;
@@ -285,7 +285,7 @@ export default class Validator {
      * @method isString
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isString(message) {
         this.constraints.isString = message;
@@ -298,7 +298,7 @@ export default class Validator {
      * @method notNumber
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notNumber(message) {
         this.constraints.notNumber = message;
@@ -311,7 +311,7 @@ export default class Validator {
      * @method isNumber
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isNumber(message) {
         this.constraints.isNumber = message;
@@ -324,7 +324,7 @@ export default class Validator {
      * @method notArray
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notArray(message) {
         this.constraints.notArray = message;
@@ -337,7 +337,7 @@ export default class Validator {
      * @method isArray
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isArray(message) {
         this.constraints.isArray = message;
@@ -350,7 +350,7 @@ export default class Validator {
      * @method notObject
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notObject(message) {
         this.constraints.notObject = message;
@@ -363,7 +363,7 @@ export default class Validator {
      * @method isObject
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isObject(message) {
         this.constraints.isObject = message;
@@ -376,7 +376,7 @@ export default class Validator {
      * @method notBoolean
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notBoolean(message) {
         this.constraints.notBoolean = message;
@@ -389,7 +389,7 @@ export default class Validator {
      * @method isBoolean
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isBoolean(message) {
         this.constraints.isBoolean = message;
@@ -402,7 +402,7 @@ export default class Validator {
      * @method notElement
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notElement(message) {
         this.constraints.notElement = message;
@@ -415,7 +415,7 @@ export default class Validator {
      * @method isElement
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isElement(message) {
         this.constraints.isElement = message;
@@ -428,7 +428,7 @@ export default class Validator {
      * @method notFunction
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notFunction(message) {
         this.constraints.notFunction = message;
@@ -441,7 +441,7 @@ export default class Validator {
      * @method isFunction
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isFunction(message) {
         this.constraints.isFunction = message;
@@ -454,7 +454,7 @@ export default class Validator {
      * @method notEmpty
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notEmpty(message) {
         this.constraints.notEmpty = message;
@@ -467,7 +467,7 @@ export default class Validator {
      * @method isEmpty
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isEmpty(message) {
         this.constraints.isEmpty = message;
@@ -481,7 +481,7 @@ export default class Validator {
      * @param {RegExp|String} regexp Regular expression to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notRegExp(regexp, message) {
         if(Helper.isString(regexp)){
@@ -499,7 +499,7 @@ export default class Validator {
      * @param {RegExp|String} regexp Regular expression to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isRegExp(regexp, message) {
         if(Helper.isString(regexp)){
@@ -517,7 +517,7 @@ export default class Validator {
      * @param {String} type Type to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notType(type, message) {
         this.values.notType = type;
@@ -532,7 +532,7 @@ export default class Validator {
      * @param {String} type Type to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isType(type, message) {
         this.values.isType = type;
@@ -547,7 +547,7 @@ export default class Validator {
      * @param {Number} length Length to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isLength(length, message) {
         this.values.isLength = parseInt(length, 10);
@@ -562,7 +562,7 @@ export default class Validator {
      * @param {Number} length Length to validate.
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     notLength(length, message) {
         this.values.notLength = length;
@@ -576,7 +576,7 @@ export default class Validator {
      * @method isEmail
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isEmail(message) {
         this.constraints.isEmail = message;
@@ -589,7 +589,7 @@ export default class Validator {
      * @method isPostalCode
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isPostalCode(message) {
         this.constraints.isPostalCode = message;
@@ -602,7 +602,7 @@ export default class Validator {
      * @method isUrl
      * @param {String} message Error message.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     isUrl(message) {
         this.constraints.isUrl = message;
@@ -615,7 +615,7 @@ export default class Validator {
      * @method validate
      * @param value Value to validate.
      * @since 1.0.0
-     * @returns {Validator} Returns the current Validator object.
+     * @return {Validator} Returns the current Validator object.
      */
     validate(value) {
         this.errors = {};
@@ -633,7 +633,7 @@ export default class Validator {
      * @method isValid
      * @param value Value to validate. If value is defined, validate method will be called.
      * @since 1.0.0
-     * @returns {boolean} Returns true if all defined constraints are valid and false otherwise.
+     * @return {boolean} Returns true if all defined constraints are valid and false otherwise.
      */
     isValid(value) {
         if (value !== undefined) {
@@ -648,7 +648,7 @@ export default class Validator {
      *
      * @method getErrors
      * @since 1.0.0
-     * @returns {Object} Returns an object containing all errors.
+     * @return {Object} Returns an object containing all errors.
      */
     getErrors() {
         return this.errors;
@@ -659,7 +659,7 @@ export default class Validator {
      *
      * @method getErrorConstraints
      * @since 1.0.0
-     * @returns {Array} Returns an array containing all error constraints.
+     * @return {Array} Returns an array containing all error constraints.
      */
     getErrorConstraints() {
         return Object.keys(this.errors);
@@ -670,7 +670,7 @@ export default class Validator {
      *
      * @method getErrorMessages
      * @since 1.0.0
-     * @returns {Array} Returns an array containing all error messages.
+     * @return {Array} Returns an array containing all error messages.
      */
     getErrorMessages() {
         return Object.values(this.errors);
@@ -681,7 +681,7 @@ export default class Validator {
      *
      * @method getErrorMessage
      * @since 1.0.0
-     * @returns {String|null} Returns the error message for the constraint.
+     * @return {String|null} Returns the error message for the constraint.
      */
     getErrorMessage(constraint) {
         return this.errors[constraint] || null;

@@ -1,3 +1,8 @@
 /.idea/
 /deploy_rsa
 /deploy_rsa.pub
+/composer.json
+/composer.lock
+/vendor/
+/doc/
+/data/

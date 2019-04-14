@@ -21,7 +21,7 @@ export default class DomCreator {
      *
      * @method constructor
      * @since 1.0.0
-     * @returns {DomCreator} Returns an instance of DomCreator object.
+     * @return {DomCreator} Returns an instance of DomCreator object.
      */
     constructor() {
 
@@ -39,7 +39,7 @@ export default class DomCreator {
      * @param {String} type Type of element ('input', 'button', ...). If isTemplate equals true, this value can be "<button>...</button>"
      * * @param {Boolean} isTemplate
      * @since 1.0.0
-     * @returns {DomCreator} Returns an instance of DomCreator object.
+     * @return {DomCreator} Returns an instance of DomCreator object.
      */
     createElement(name, type, isTemplate = false){
 
@@ -65,7 +65,7 @@ export default class DomCreator {
      * @method insertInto
      * @param {HTMLElement|String} container HTML Element or CSS selector. Must be an element from the DOM.
      * @since 1.0.0
-     * @returns {DomCreator} Returns an instance of DomCreator object.
+     * @return {DomCreator} Returns an instance of DomCreator object.
      */
     insertInto(container){
 
@@ -82,7 +82,7 @@ export default class DomCreator {
      * @method get
      * @param {String} name Name of element.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     get(name){
         return this.elements[name] || null;

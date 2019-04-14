@@ -226,7 +226,7 @@ export default class Ajax {
      * @param {Function} [successCallback] Callback to trigger for a success request.
      * @param {Function} [errorCallback] Callback to trigger for a failed request.
      * @since 1.0.0
-     * @returns {Ajax} Returns the current Ajax object.
+     * @return {Ajax} Returns the current Ajax object.
      */
     send(url, successCallback, errorCallback) {
         if (!this.xhr || !Helper.isString(url)) {

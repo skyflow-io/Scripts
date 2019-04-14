@@ -19,7 +19,7 @@ export default class DomElement {
      * @method constructor
      * @param {HTMLElement} element Must be a DOM element or a valid CSS selector.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     constructor(element) {
 
@@ -74,7 +74,7 @@ export default class DomElement {
      * @method id
      * @param {String|null} id Id of element.
      * @since 1.0.0
-     * @returns {String|DomElement} Returns an instance of DomElement object.
+     * @return {String|DomElement} Returns an instance of DomElement object.
      */
     id(id = null){
         if(!id){
@@ -91,7 +91,7 @@ export default class DomElement {
      * @method id
      * @param {String|null} text Text content of element.
      * @since 1.0.0
-     * @returns {String|DomElement} Returns an instance of DomElement object.
+     * @return {String|DomElement} Returns an instance of DomElement object.
      */
     text(text = null){
         if(!text){
@@ -109,7 +109,7 @@ export default class DomElement {
      * @method html
      * @param {String|null} html HTML content of element.
      * @since 1.0.0
-     * @returns {String|DomElement} Returns an instance of DomElement object.
+     * @return {String|DomElement} Returns an instance of DomElement object.
      */
     html(html = null){
         if(!html){
@@ -126,7 +126,7 @@ export default class DomElement {
      * @method data
      * @param {Object} data Data to set.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     data(data){
         Object.keys(data).map((key)=>{
@@ -143,7 +143,7 @@ export default class DomElement {
      * @param {String} key Key of data.
      * @param {String} value Value of data.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     addData(key, value){
 
@@ -159,7 +159,7 @@ export default class DomElement {
      * @method getData
      * @param {String} key Key of data.
      * @since 1.0.0
-     * @returns {String} Returns data value.
+     * @return {String} Returns data value.
      */
     getData(key){
         return this.element.dataset[Helper.camelCase(key)];
@@ -171,7 +171,7 @@ export default class DomElement {
      * @method getChild
      * @param {String} selector CSS selector.
      * @since 1.0.0
-     * @returns {DomElement|null} Returns an instance of DomElement object.
+     * @return {DomElement|null} Returns an instance of DomElement object.
      */
     getChild(selector){
         const child = this.element.querySelector(selector);
@@ -185,7 +185,7 @@ export default class DomElement {
      * @method firstChild
      * @param {HTMLElement|null} child HTML Element. Returns DomElement for first child if child is null.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     firstChild(child = null){
 
@@ -208,7 +208,7 @@ export default class DomElement {
      * @method lastChild
      * @param {HTMLElement|null} child HTML Element. Returns DomElement for last child if child is null.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     lastChild(child = null){
 
@@ -227,7 +227,7 @@ export default class DomElement {
      * @method addChild
      * @param {HTMLElement} child HTML Element.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     addChild(child){
         this.element.appendChild(child);
@@ -240,7 +240,7 @@ export default class DomElement {
      *
      * @method children
      * @since 1.0.0
-     * @returns {DomElement[]} Returns collection of DomElement instance.
+     * @return {DomElement[]} Returns collection of DomElement instance.
      */
     children(){
 
@@ -264,7 +264,7 @@ export default class DomElement {
      * @method insertInto
      * @param {HTMLElement|String} container HTML Element or CSS selector. Must be an element from the DOM.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     insertInto(container){
         if(Helper.isString(container)){
@@ -280,7 +280,7 @@ export default class DomElement {
      *
      * @method remove
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     remove(){
         const parent = this.element.parentNode;
@@ -297,7 +297,7 @@ export default class DomElement {
      * @method addClass
      * @param {String} name Class name.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     addClass(name){
         this.element.classList.add(name);
@@ -311,7 +311,7 @@ export default class DomElement {
      * @method removeClass
      * @param {String} name Class name.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     removeClass(name){
         this.element.classList.remove(name);
@@ -325,7 +325,7 @@ export default class DomElement {
      * @method toggleClass
      * @param {String} name Class name.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     toggleClass(name){
         this.element.classList.toggle(name);
@@ -339,7 +339,7 @@ export default class DomElement {
      * @method hasClass
      * @param {String} name Class name.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if has class and false otherwise.
+     * @return {Boolean} Returns true if has class and false otherwise.
      */
     hasClass(name){
         return this.element.classList.contains(name);
@@ -353,7 +353,7 @@ export default class DomElement {
      * @param {String} name Name of style.
      * @param {String} value Value of style.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     addStyle(name, value){
         this.element.style[name] = value;
@@ -367,7 +367,7 @@ export default class DomElement {
      * @method removeStyle
      * @param {String} name Name of style.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     removeStyle(name){
         this.element.style[name] = null;
@@ -382,7 +382,7 @@ export default class DomElement {
      * @param {String} event Event name.
      * @param {Function} callback Function to trigger.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     on(event, callback){
 
@@ -410,7 +410,7 @@ export default class DomElement {
      * @param {String} event Event name.
      * @param {Function} callback Function to trigger.
      * @since 1.0.0
-     * @returns {DomElement} Returns an instance of DomElement object.
+     * @return {DomElement} Returns an instance of DomElement object.
      */
     off(event, callback = null){
 

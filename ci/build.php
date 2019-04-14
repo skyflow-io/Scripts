@@ -10,22 +10,14 @@ $fileSystem = new Filesystem();
 $result = [];
 
 $widgetFinder = new Finder();
-$widgetFinder->directories()->depth(0)->in('/app/src')->sortByName();
+$widgetFinder->files()->in('/app/src')->sortByName();
 foreach ($widgetFinder as $widget) {
     $name = $widget->getBasename();
     $files = [
-        'name' => $name,
-        'files' => []
+        'name' => preg_replace("#\.js$#i", "", $widget->getFilename()),
+        'filename' => $widget->getFilename(),
+        'contents' => $widget->getContents(),
     ];
-    $filesFinder = new Finder();
-    $filesFinder->files()->in('/app/src/' . $name);
-    foreach ($filesFinder as $file) {
-        $files['files'][] = [
-            'directory' => $file->getRelativePath(),
-            'filename' => $file->getFilename(),
-            'contents' => $file->getContents(),
-        ];
-    }
     $result[] = $files;
 }
 

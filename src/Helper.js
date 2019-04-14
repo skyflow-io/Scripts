@@ -16,7 +16,7 @@ export default class Helper {
      * @method getType
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {String} Returns the type of object.
+     * @return {String} Returns the type of object.
      */
     static getType(object) {
         if (object === null) {
@@ -44,7 +44,7 @@ export default class Helper {
      * @method isString
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a string and false otherwise.
+     * @return {Boolean} Returns true if the object is a string and false otherwise.
      */
     static isString(object) {
         return this.getType(object) === 'string';
@@ -56,7 +56,7 @@ export default class Helper {
      * @method isNumber
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a number and false otherwise.
+     * @return {Boolean} Returns true if the object is a number and false otherwise.
      */
     static isNumber(object) {
         return this.getType(object) === 'number';
@@ -68,7 +68,7 @@ export default class Helper {
      * @method isArray
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a array and false otherwise.
+     * @return {Boolean} Returns true if the object is a array and false otherwise.
      */
     static isArray(object) {
         return this.getType(object) === 'Array';
@@ -80,7 +80,7 @@ export default class Helper {
      * @method isObject
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a object and false otherwise.
+     * @return {Boolean} Returns true if the object is a object and false otherwise.
      */
     static isObject(object) {
         return this.getType(object) === 'Object';
@@ -92,7 +92,7 @@ export default class Helper {
      * @method isBoolean
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a boolean and false otherwise.
+     * @return {Boolean} Returns true if the object is a boolean and false otherwise.
      */
     static isBoolean(object) {
         return this.getType(object) === 'boolean';
@@ -104,7 +104,7 @@ export default class Helper {
      * @method isElement
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a DOM element and false otherwise.
+     * @return {Boolean} Returns true if the object is a DOM element and false otherwise.
      */
     static isElement(object) {
         return this.getType(object) === 'Element';
@@ -116,7 +116,7 @@ export default class Helper {
      * @method isFunction
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a function and false otherwise.
+     * @return {Boolean} Returns true if the object is a function and false otherwise.
      */
     static isFunction(object) {
         return this.getType(object) === 'function';
@@ -128,7 +128,7 @@ export default class Helper {
      * @method isCallback
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a function and false otherwise.
+     * @return {Boolean} Returns true if the object is a function and false otherwise.
      */
     static isCallback(object) {
         return this.isFunction(object);
@@ -140,7 +140,7 @@ export default class Helper {
      * @method isFormData
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is a FormData and false otherwise.
+     * @return {Boolean} Returns true if the object is a FormData and false otherwise.
      */
     static isFormData(object) {
         return this.getType(object) === 'FormData';
@@ -152,7 +152,7 @@ export default class Helper {
      * @method isEmpty
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true for empty array, string, object, false, undefined, 0, null, NaN and false otherwise.
+     * @return {Boolean} Returns true for empty array, string, object, false, undefined, 0, null, NaN and false otherwise.
      */
     static isEmpty(object) {
         if (!object) {
@@ -177,7 +177,7 @@ export default class Helper {
      * @method isNull
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is null and false otherwise.
+     * @return {Boolean} Returns true if the object is null and false otherwise.
      */
     static isNull(object) {
         return object === null;
@@ -189,7 +189,7 @@ export default class Helper {
      * @method isFalse
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is false and false otherwise.
+     * @return {Boolean} Returns true if the object is false and false otherwise.
      */
     static isFalse(object) {
         return object === false;
@@ -201,7 +201,7 @@ export default class Helper {
      * @method isTrue
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is true and false otherwise.
+     * @return {Boolean} Returns true if the object is true and false otherwise.
      */
     static isTrue(object) {
         return object === true;
@@ -213,7 +213,7 @@ export default class Helper {
      * @method isBlank
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the string is blank and false otherwise.
+     * @return {Boolean} Returns true if the string is blank and false otherwise.
      */
     static isBlank(object) {
         return this.isString(object) && object.trim() === '';
@@ -225,7 +225,7 @@ export default class Helper {
      * @method isRegExp
      * @param object Object we want to know the type.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the object is regular expression and false otherwise.
+     * @return {Boolean} Returns true if the object is regular expression and false otherwise.
      */
     static isRegExp(object) {
         return this.getType(object) === 'RegExp';
@@ -237,7 +237,7 @@ export default class Helper {
      * @method convertToArray
      * @param object Object to convert.
      * @since 1.0.0
-     * @returns {Array} Returns the resulting array.
+     * @return {Array} Returns the resulting array.
      */
     static convertToArray(object) {
 
@@ -256,7 +256,7 @@ export default class Helper {
      * @param {HTMLElement} element Element to insert.
      * @param {HTMLElement} afterElement Insert an element after this one.
      * @since 1.0.0
-     * @returns {boolean} Returns true if everything went well and false otherwise.
+     * @return {boolean} Returns true if everything went well and false otherwise.
      */
     static insertAfter(element, afterElement) {
         const parent = afterElement.parentNode;
@@ -297,7 +297,7 @@ export default class Helper {
      * @method lowerFirst
      * @param {String} text The string to convert.
      * @since 1.0.0
-     * @returns {String} Returns the converted string.
+     * @return {String} Returns the converted string.
      */
     static lowerFirst(text) {
         return (text.slice(0, 1)).toLowerCase() + text.slice(1);
@@ -309,7 +309,7 @@ export default class Helper {
      * @method upperFirst
      * @param {String} text The string to convert.
      * @since 1.0.0
-     * @returns {String} Returns the converted string.
+     * @return {String} Returns the converted string.
      */
     static upperFirst(text) {
         return (text.slice(0, 1)).toUpperCase() + text.slice(1);
@@ -321,7 +321,7 @@ export default class Helper {
      * @method camelCase
      * @param {String} text The string to convert.
      * @since 1.0.0
-     * @returns {String} Returns the converted string.
+     * @return {String} Returns the converted string.
      */
     static camelCase(text) {
         return text.replace(/\s(.)/g, ($1) => {return $1.toUpperCase();})
@@ -336,7 +336,7 @@ export default class Helper {
      * @method slugify
      * @param {String} text The string to convert.
      * @since 1.0.0
-     * @returns {String} Returns the converted string.
+     * @return {String} Returns the converted string.
      */
     static slugify(text) {
         return text.toLowerCase()
@@ -359,7 +359,7 @@ export default class Helper {
      * @param {String} text The string to truncate.
      * @param {Number} count Number of char.
      * @since 1.0.0
-     * @returns {String} Returns the truncated string.
+     * @return {String} Returns the truncated string.
      */
     static ellipsis(text, count = 12) {
         return (text.length > count) ? text.substring(0, count) + '...' : text;
@@ -372,7 +372,7 @@ export default class Helper {
      * @param {Object} object Object.
      * @param {String} property Property to check.
      * @since 1.0.0
-     * @returns {Boolean} Returns true if object has property and false otherwise.
+     * @return {Boolean} Returns true if object has property and false otherwise.
      */
     static hasProperty(object, property) {
         return Object.prototype.hasOwnProperty.call(object, property);
@@ -386,7 +386,7 @@ export default class Helper {
      * @param {String} event Event name.
      * @param {Function} callback Event callback.
      * @since 1.0.0
-     * @returns {void}
+     * @return {void}
      */
     static addEvent(element, event, callback) {
         if (element.addEventListener) {
@@ -404,7 +404,7 @@ export default class Helper {
      * @param {String} event Event name.
      * @param {Function} callback Event callback.
      * @since 1.0.0
-     * @returns {void}
+     * @return {void}
      */
     static removeEvent(element, event, callback) {
         if (element.removeEventListener) {
@@ -420,7 +420,7 @@ export default class Helper {
      * @method generateUniqueId
      * @param {Number} count Length of id.
      * @since 1.0.0
-     * @returns {Number} Returns generated id.
+     * @return {Number} Returns generated id.
      */
     static generateUniqueId(count = 6) {
         return Math.floor(Math.random() * Math.pow(10, count));
@@ -438,7 +438,7 @@ export default class Helper {
      * @method randomInt
      * @param {Number} max Value will be between 0 and max.
      * @since 1.0.0
-     * @returns {Number} Returns random integer.
+     * @return {Number} Returns random integer.
      */
     static randomInt(max){
         return Math.floor(Math.random() * Math.floor(max));
@@ -449,7 +449,7 @@ export default class Helper {
      *
      * @method isWindows
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the platform is windows and false otherwise.
+     * @return {Boolean} Returns true if the platform is windows and false otherwise.
      */
     static isWindows() {
         return process.platform === 'win32';
@@ -460,7 +460,7 @@ export default class Helper {
      *
      * @method isLinux
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the platform is linux and false otherwise.
+     * @return {Boolean} Returns true if the platform is linux and false otherwise.
      */
     static isLinux() {
         return process.platform === 'linux';
@@ -471,7 +471,7 @@ export default class Helper {
      *
      * @method isMac
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the platform is mac and false otherwise.
+     * @return {Boolean} Returns true if the platform is mac and false otherwise.
      */
     static isMac() {
         return process.platform === 'darwin';
@@ -482,7 +482,7 @@ export default class Helper {
      *
      * @method isInux
      * @since 1.0.0
-     * @returns {Boolean} Returns true if the platform is linux or mac and false otherwise.
+     * @return {Boolean} Returns true if the platform is linux or mac and false otherwise.
      */
     static isInux() {
         return this.isLinux() || this.isMac();
@@ -493,7 +493,7 @@ export default class Helper {
      *
      * @method getUserHome
      * @since 1.0.0
-     * @returns {String} Returns true if the platform is windows and false otherwise.
+     * @return {String} Returns true if the platform is windows and false otherwise.
      */
     static getUserHome() {
         return process.env[this.isWindows() ? 'USERPROFILE' : 'HOME'];
@@ -503,7 +503,7 @@ export default class Helper {
      * Generate random hexadecimal color code.
      * @method randomColor
      * @since 1.0.0
-     * @returns {String} Returns a random hexadecimal color code.
+     * @return {String} Returns a random hexadecimal color code.
      */
     static randomColor() {
         return '#' + ('0123456789abcdef'.split('').map((v, i, a) => {
