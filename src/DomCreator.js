@@ -63,7 +63,7 @@ export default class DomCreator {
      * Inserts elements into container.
      *
      * @method insertInto
-     * @param {Element|String} container HTML Element or CSS selector. Must be an element from the DOM.
+     * @param {HTMLElement|String} container HTML Element or CSS selector. Must be an element from the DOM.
      * @since 1.0.0
      * @returns {DomCreator} Returns an instance of DomCreator object.
      */

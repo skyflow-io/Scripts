@@ -324,7 +324,7 @@
     /**
      * Check if an element map with search criteria.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {object} options
      * @return {boolean}
      */
@@ -474,7 +474,7 @@
     /**
      * Gets values ​​of the four borders.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} property Three values: width style color
      * @return {object}
      */
@@ -494,7 +494,7 @@
     /**
      * Gets values ​​of the four edges.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} property
      * @return {object}
      */
@@ -512,7 +512,7 @@
     /**
      * Gives the values of all the CSS properties of an element after applying the active stylesheets and resolving any basic computation those values may contain.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} property
      * @return {*}
      */
@@ -531,7 +531,7 @@
     /**
      * Generates or gets unique id of an element.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @return {string}
      */
     function getUniqueId(element) {
@@ -546,8 +546,8 @@
     /**
      * Checks if an element is child of another.
      *
-     * @param {Element} child
-     * @param {Element} parent
+     * @param {HTMLElement} child
+     * @param {HTMLElement} parent
      * @return {boolean}
      */
     function isChildOf(child, parent) {
@@ -621,7 +621,7 @@
     /**
      * Adds events.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} event
      * @param {Function} callback
      * @return {string}
@@ -662,7 +662,7 @@
     /**
      * Removes events.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} event
      * @param {Function} callback
      * @return {boolean}
@@ -733,7 +733,7 @@
     /**
      * Triggers events.
      *
-     * @param {Element} element
+     * @param {HTMLElement} element
      * @param {string} event
      * @return {boolean}
      */

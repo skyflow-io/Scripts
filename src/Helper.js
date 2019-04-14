@@ -5,9 +5,8 @@
  * @static
  * @author Skyflow
  * @version 1.0.0
- * @example
- *      Heller.isElement(document.createElement('div')); // Returns true
- *      Heller.isObject({}); // Returns true
+ * @example Heller.isElement(document.createElement('div')); // Returns true
+ * @example Heller.isObject({}); // Returns true
  */
 export default class Helper {
 
@@ -254,8 +253,8 @@ export default class Helper {
      * Inserts one element after another.
      *
      * @method insertAfter
-     * @param {Element} element Element to insert.
-     * @param {Element} afterElement Insert an element after this one.
+     * @param {HTMLElement} element Element to insert.
+     * @param {HTMLElement} afterElement Insert an element after this one.
      * @since 1.0.0
      * @returns {boolean} Returns true if everything went well and false otherwise.
      */
@@ -277,8 +276,8 @@ export default class Helper {
      * Checks if an element is child of another.
      *
      * @method isChildOf
-     * @param {Element} child Element to check.
-     * @param {Element} parent Container element.
+     * @param {HTMLElement} child Element to check.
+     * @param {HTMLElement} parent Container element.
      * @return {boolean}
      */
     static isChildOf(child, parent) {
@@ -383,8 +382,8 @@ export default class Helper {
      * Adds event to element.
      *
      * @method addEvent
-     * @param {Element|Document} element Target element.
-     * @param {String} event Event to add.
+     * @param {HTMLElement|Document} element Target element.
+     * @param {String} event Event name.
      * @param {Function} callback Event callback.
      * @since 1.0.0
      * @returns {void}
@@ -401,8 +400,8 @@ export default class Helper {
      * Removes event.
      *
      * @method removeEvent
-     * @param {Element|Document} element Target element.
-     * @param {String} event Event to remove.
+     * @param {HTMLElement|Document} element Target element.
+     * @param {String} event Event name.
      * @param {Function} callback Event callback.
      * @since 1.0.0
      * @returns {void}
@@ -419,14 +418,13 @@ export default class Helper {
      * Generates unique id.
      *
      * @method generateUniqueId
-     * @param {Number} count Lenght of id.
+     * @param {Number} count Length of id.
      * @since 1.0.0
      * @returns {Number} Returns generated id.
      */
-    static generateUniqueId(count = 5) {
+    static generateUniqueId(count = 6) {
         return Math.floor(Math.random() * Math.pow(10, count));
     }
-
 
     static removeFromArrayById(array, index){
         if (index > -1) {
@@ -434,10 +432,17 @@ export default class Helper {
         }
     }
 
+    /**
+     * Generates random integer.
+     *
+     * @method randomInt
+     * @param {Number} max Value will be between 0 and max.
+     * @since 1.0.0
+     * @returns {Number} Returns random integer.
+     */
     static randomInt(max){
         return Math.floor(Math.random() * Math.floor(max));
     }
-
 
     /**
      * Check if platform is windows.

@@ -17,7 +17,7 @@ export default class DomElement {
      * Constructor.
      *
      * @method constructor
-     * @param {Element} element Must be a DOM element or a valid CSS selector.
+     * @param {HTMLElement} element Must be a DOM element or a valid CSS selector.
      * @since 1.0.0
      * @returns {DomElement} Returns an instance of DomElement object.
      */
@@ -183,7 +183,7 @@ export default class DomElement {
      * Gets or sets first child.
      *
      * @method firstChild
-     * @param {Element|null} child HTML Element. Returns DomElement for first child if child is null.
+     * @param {HTMLElement|null} child HTML Element. Returns DomElement for first child if child is null.
      * @since 1.0.0
      * @returns {DomElement} Returns an instance of DomElement object.
      */
@@ -206,7 +206,7 @@ export default class DomElement {
      * Gets or sets last child.
      *
      * @method lastChild
-     * @param {Element|null} child HTML Element. Returns DomElement for last child if child is null.
+     * @param {HTMLElement|null} child HTML Element. Returns DomElement for last child if child is null.
      * @since 1.0.0
      * @returns {DomElement} Returns an instance of DomElement object.
      */
@@ -225,7 +225,7 @@ export default class DomElement {
      * Adds child to element.
      *
      * @method addChild
-     * @param {Element} child HTML Element.
+     * @param {HTMLElement} child HTML Element.
      * @since 1.0.0
      * @returns {DomElement} Returns an instance of DomElement object.
      */
@@ -262,7 +262,7 @@ export default class DomElement {
      * Inserts this element into another.
      *
      * @method insertInto
-     * @param {Element|String} container HTML Element or CSS selector. Must be an element from the DOM.
+     * @param {HTMLElement|String} container HTML Element or CSS selector. Must be an element from the DOM.
      * @since 1.0.0
      * @returns {DomElement} Returns an instance of DomElement object.
      */
