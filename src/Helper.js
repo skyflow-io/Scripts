@@ -509,4 +509,25 @@ export default class Helper {
         return '#' + ('0123456789abcdef'.split('').map((v, i, a) => {
             return i > 5 ? null : a[Math.floor(Math.random() * 16)] }).join('')).toUpperCase();
     }
+
+    /**
+     * Get array object value by key.
+     *
+     * @method getByKey
+     * @param {Object} object Array object.
+     * @param {String} key Key.
+     */
+    static getByKey(object, key){
+        let keys = key.split('.');
+
+        for (let i = 0; i < keys.length; i++) {
+            key = keys[i];
+            if(!object || !Helper.hasProperty(object, key)){
+                return null;
+            }
+            object = object[key];
+        }
+
+        return object;
+    }
 }

@@ -17,7 +17,7 @@ export default class DomElement {
      * Constructor.
      *
      * @method constructor
-     * @param {HTMLElement} element Must be a DOM element or a valid CSS selector.
+     * @param {HTMLElement|String} element Must be a DOM element or a valid CSS selector.
      * @since 1.0.0
      * @return {DomElement} Returns an instance of DomElement object.
      */
@@ -40,32 +40,31 @@ export default class DomElement {
         this.addData('skyflow-unique-id', this.uniqueId);
 
         this.events = {
-           // '6778742212': {
-           //     'click': [()=>{}, ()=>{}]
-           // }
+            // '6778742212': {
+            //     'click': [()=>{}, ()=>{}]
+            // }
         };
 
-        this.eventCallback = (e)=>{
+        this.eventCallback = this.eventCallback.bind(this);
 
-            if(e.type === 'mouseover' || e.type === 'mouseout'){
-                let related = e.relatedTarget || e[(e.type === 'mouseout') ? 'toElement' : 'fromElement'] || null;
-                if(Helper.isChildOf(related, this.element) || Helper.isChildOf(e.target, this.element)){
-                    return false;
-                }
-            }
+    }
 
-            if(!this.events[this.uniqueId]){
+    eventCallback(e){
+        if(e.type === 'mouseover' || e.type === 'mouseout'){
+            let related = e.relatedTarget || e[(e.type === 'mouseout') ? 'toElement' : 'fromElement'] || null;
+            if(Helper.isChildOf(related, this.element) || Helper.isChildOf(e.target, this.element)){
                 return false;
             }
+        }
 
-            let callbacks = this.events[this.uniqueId][e.type] || [];
-            callbacks.map((callback)=>{
-                callback.apply(null, [e]);
-            });
-
-        };
-
-
+        if(!this.events[this.uniqueId]){
+            return false;
+        }
+        e.eventTarget = this.element;
+        let callbacks = this.events[this.uniqueId][e.type] || [];
+        callbacks.map((callback)=>{
+            callback.apply(null, [e]);
+        });
     }
 
     /**
@@ -344,7 +343,6 @@ export default class DomElement {
     hasClass(name){
         return this.element.classList.contains(name);
     }
-
 
     /**
      * Adds style to element.
